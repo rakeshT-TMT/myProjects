@@ -82,7 +82,7 @@ class WeeklyWeatherReport {
 
     }
 
-
+// Hottest Day
     public WeatherReport getHottestDay() {
         return reports.stream()
                 .max((r1, r2) -> Integer.compare(r1.getHighestTemp(), r2.getHighestTemp()))
@@ -118,7 +118,7 @@ class WeeklyWeatherReport {
     }
 
 
-    public void displaySummary() {
+    public void myReport() {
         WeatherReport hottest = getHottestDay();
         WeatherReport coolest = getCoolestDay();
         WeatherReport highestRainfall = getHighestRainfallDay();
@@ -136,7 +136,7 @@ class WeeklyWeatherReport {
 class Main {
     public static void main(String[] args) {
         WeeklyWeatherReport report = new WeeklyWeatherReport();
-        report.displaySummary();
+        report.myReport();
     }
 }
 
