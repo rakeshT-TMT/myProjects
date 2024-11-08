@@ -1,7 +1,6 @@
-package com.example.gptQs;
+package com.example.CRUD;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class CrudOpsOnHmap {
